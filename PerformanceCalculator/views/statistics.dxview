@@ -1,0 +1,30 @@
+<div data-options="dxView : { name: 'statistics', title: 'Statistiche di Produzione' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxScrollView: {}">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Efficienza</div>
+                </div>
+                <div id="lgEfficiency" data-bind="dxLinearGauge: efficiencyGaugeOptions" style="height: 90px"></div>
+                <!-- <div data-bind="dxNumberBox: { min: 0, value: efficiency, readOnly: true }"></div> -->
+            </div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Performance</div>
+                </div>
+                <div id="lgPerformance" data-bind="dxLinearGauge: performanceGaugeOptions" style="height: 90px"></div>
+                <!-- <div data-bind="dxNumberBox: { min: 0, value: performance, readOnly: true }"></div> -->
+            </div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">DownTime %</div>
+                </div>
+                <div id="lgDownTimePercent" data-bind="dxLinearGauge: downTimePercentGaugeOptions" style="height: 70px"></div>
+                <div class="dx-field">
+                    <div class="dx-field-label">BreakDown %</div>
+                </div>
+                <div id="lgBreakDownPercent" data-bind="dxLinearGauge: breakDownPercentGaugeOptions" style="height: 70px"></div>
+            </div>
+        </div>
+    </div>
+</div>

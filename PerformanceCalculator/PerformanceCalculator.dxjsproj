@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9fe6b6c8-2213-4de6-bb4b-ad998df09040</ProjectGuid>
+    <AutoAssignPort>True</AutoAssignPort>
+    <RunInSimulator>True</RunInSimulator>
+    <ApplicationPage>index.html</ApplicationPage>
+    <Name>PerformanceCalculator</Name>
+    <RootNamespace>PerformanceCalculator</RootNamespace>
+    <DebugSitePortNumber>50000</DebugSitePortNumber>
+    <UseWebDev>False</UseWebDev>
+    <DefaultDevice>androidPhone</DefaultDevice>
+    <DeviceOrientation>Portrait</DeviceOrientation>
+    <KeyApkPath>certificates\android_certificate.p12</KeyApkPath>
+    <KeyApkAlias>tmpl</KeyApkAlias>
+    <VersionCode>4</VersionCode>
+    <TemplateFileApk />
+    <UseCustomTemplateNameApk>False</UseCustomTemplateNameApk>
+    <KeyIpaPath />
+    <ProvisionProfile />
+    <IpaPrivateKeyFile />
+    <TemplateFileIpa />
+    <UseCustomTemplateNameIpa>False</UseCustomTemplateNameIpa>
+    <IpaDevicesFamily>Universal</IpaDevicesFamily>
+    <XapPackagePublisherID>{b5a1d4a1-5e4c-4cd6-bc57-b4e499d15998}</XapPackagePublisherID>
+    <XapPackageProductID>{39f8a4b1-295a-44d6-ba70-a07229af2bff}</XapPackageProductID>
+    <ApkDexFilePackageName>app.id_9cf1188ac170496c95636aa3c7bfad3a</ApkDexFilePackageName>
+    <ScreenOrientation>Default</ScreenOrientation>
+    <ApplicationTitle>Performance Calculator</ApplicationTitle>
+    <BundleIdentifier>Brain Enterprise di Plevani Gianluca</BundleIdentifier>
+    <VersionPackage>1.2.1</VersionPackage>
+    <ShowSplashScreen>True</ShowSplashScreen>
+    <Accelerometer>False</Accelerometer>
+    <Camera>False</Camera>
+    <Capture>False</Capture>
+    <Compass>False</Compass>
+    <Connection>False</Connection>
+    <Contacts>False</Contacts>
+    <Device>False</Device>
+    <Events>False</Events>
+    <File>False</File>
+    <Geolocation>False</Geolocation>
+    <Media>False</Media>
+    <Notification>False</Notification>
+    <Storage>False</Storage>
+    <WhiteList>http://www.brain-enterprise.it</WhiteList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="index.js" />
+    <Content Include="index.html" />
+    <Content Include="index.css" />
+    <Content Include="css\dx.common.css" />
+    <Content Include="css\dx.android.holo-dark.css" />
+    <Content Include="css\dx.desktop.default.css" />
+    <Content Include="css\dx.ios.default.css" />
+    <Content Include="css\dx.win8.black.css" />
+    <Content Include="css\dx.win8.white.css" />
+    <Content Include="css\dx.win8.black.small.css" />
+    <Content Include="data\db.js" />
+    <Content Include="js\be.production.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="layouts\Navbar\NavbarLayout.css" />
+    <Content Include="layouts\Navbar\NavbarLayout.html" />
+    <Content Include="layouts\Navbar\NavbarLayout.js" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.js" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.css" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.html" />
+    <Content Include="layouts\Empty\EmptyLayout.js" />
+    <Content Include="layouts\Empty\EmptyLayout.css" />
+    <Content Include="layouts\Empty\EmptyLayout.html" />
+    <Content Include="layouts\Desktop\DesktopLayout.css" />
+    <Content Include="layouts\Desktop\DesktopLayout.html" />
+    <Content Include="js\dx.all.js" />
+    <Content Include="js\dx.all.debug.js" />
+    <Content Include="js\dx.phonejs.js" />
+    <Content Include="js\dx.phonejs.debug.js" />
+    <Content Include="js\dx.chartjs.js" />
+    <Content Include="js\dx.chartjs.debug.js" />
+    <Content Include="js\globalize.js" />
+    <Content Include="js\globalize.min.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\knockout-2.2.1.js" />
+    <Content Include="views\home.dxview" />
+    <Content Include="views\home.css" />
+    <Content Include="views\home.js" />
+    <Content Include="views\about.html" />
+    <Content Include="app.config.js" />
+    <Content Include="views\orders.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\orders.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\orders.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\settings.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\settings.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\settings.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\speedloss.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\speedloss.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\speedloss.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\statistics.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\statistics.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\statistics.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\variables.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\variables.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\variables.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="certificates\" />
+    <Folder Include="css\" />
+    <Folder Include="data\" />
+    <Folder Include="js\" />
+    <Folder Include="layouts\" />
+    <Folder Include="layouts\Desktop\" />
+    <Folder Include="layouts\Empty\" />
+    <Folder Include="layouts\Navbar\" />
+    <Folder Include="layouts\SlideOut\" />
+    <Folder Include="Resources\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="certificates\android_certificate.p12" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_36_36.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_48_48.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_72_72.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_96_96.png" />
+    <None Include="Resources\PackageIcons.Android.splash_1280_720.png" />
+    <None Include="Resources\PackageIcons.Android.splash_200_320.png" />
+    <None Include="Resources\PackageIcons.Android.splash_320_200.png" />
+    <None Include="Resources\PackageIcons.Android.splash_320_480.png" />
+    <None Include="Resources\PackageIcons.Android.splash_480_320.png" />
+    <None Include="Resources\PackageIcons.Android.splash_480_800.png" />
+    <None Include="Resources\PackageIcons.Android.splash_720_1280.png" />
+    <None Include="Resources\PackageIcons.Android.splash_800_480.png" />
+    <None Include="Resources\PackageIcons.iOS.icon%402x.png" />
+    <None Include="Resources\PackageIcons.iOS.icon-72.png" />
+    <None Include="Resources\PackageIcons.iOS.icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="Build">
+    <!--
+    <Message Text="'$(MSBuildToolsPath)'"></Message>
+    -->
+    <Message Text="Build JSProject '$(MSBuildProjectFile)':" Importance="high">
+    </Message>
+    <Message Text="Copying refenecses to output dir..." Importance="high" />
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+    <Message Text="Copying files to output dir..." Importance="high" />
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+    <Message Text="Finished Build JSProject '$(MSBuildProjectFile)'." Importance="high">
+    </Message>
+  </Target>
+  <Target Name="CreateManifestResourceNames" Condition="'@(ResxWithNoCulture)@(ResxWithCulture)@(NonResxWithNoCulture)@(NonResxWithCulture)'!=''" />
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build">
+  </Target>
+  <Target Name="Clean">
+    <!--
+    <Message Text="Cleaning Output files..." Importance="high" />
+    <Delete Files="@([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+    -->
+    <Message Text="Cleaning Output dir ($([System.IO.Path]::GetFullPath('$(OutputPath)')))..." Importance="high" />
+    <RemoveDir Directories="$([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+  </Target>
+</Project>

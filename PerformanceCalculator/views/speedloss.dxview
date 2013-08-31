@@ -1,0 +1,18 @@
+<div data-options="dxView : { name: 'speedloss', title: 'Perdita di Velocità' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxScrollView: {}">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label" style="width: 100%">Perdita di Velocità</div>
+                </div>
+                <div id="lgSpeedLoss" data-bind="dxLinearGauge: speedLossGaugeOptions" style="height: 100px"></div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Minuti</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, value: speedLoss, readOnly: true }"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

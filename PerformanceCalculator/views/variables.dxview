@@ -1,0 +1,57 @@
+<div data-options="dxView : { name: 'variables', title: 'Dati di Produzione' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxScrollView: {}">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Target</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, value: targetPO, focusOutAction: targetPO_focusOut }" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Prod. Effettiva</div>                    
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, value: effectivePO, focusOutAction: effectivePO_focusOut }" style="width: 30%"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">DownTime PO</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, value: downTimePO, focusOutAction: downTimePO_focusOut }" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">DownTime NPO</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, value: downTimeNPO, focusOutAction: downTimeNPO_focusOut }" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">BreakDown</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, value: breakDownNPO, focusOutAction: breakDownNPO_focusOut }" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">DownTime Totale</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, value: downTimeTotal, readOnly: true }" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="chStops" data-bind="dxPieChart: {
+    dataSource:
+        [{ arg: 'Dt. PO', val: downTimePO },
+        { arg: 'Dt. NPO', val: downTimeNPO },
+        { arg: 'BD', val: breakDownNPO }], series: {}
+}"
+                style="height: 150px;">
+            </div>
+        </div>
+    </div>
+</div>

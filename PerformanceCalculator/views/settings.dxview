@@ -1,0 +1,29 @@
+<div data-options="dxView : { name: 'settings', title: 'Impostazioni Applicazione' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div data-bind="dxScrollView: {}">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Obiettivi</div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Performance <small>(%)</small></div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, max: 100, value: targetPerformance, focusOutAction: targetPerformance_focusOut }" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Efficienza <small>(%)</small></div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, max: 100, value: targetEfficiency, focusOutAction: targetEfficiency_focusOut }" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Perdita di Velocita'</div>
+                    <div class="dx-field-value">
+                        <div data-bind="dxNumberBox: { min: 0, max: 100, value: targetSpeedLoss, focusOutAction: targetSpeedLoss_focusOut }" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
